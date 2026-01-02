@@ -7,7 +7,9 @@
     "install-db": "mkdir -p ./lib && ([ -f ./lib/dictionary.db ] && echo 'DB exists, skipping download' || curl --fail -L -o ./lib/dictionary.db https://github.com/minhqnd/dictionary/releases/latest/download/dictionary.db)",
     "build": "npm run install-db && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
@@ -23,9 +25,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.0.16"
   }
 }
