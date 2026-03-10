@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const LANGUAGES = [
-    { name: 'Tiếng Việt', flag: '🇻🇳' },
-    { name: 'Tiếng Anh', flag: '🇬🇧' },
-    { name: 'Tiếng Pháp', flag: '🇫🇷' },
-    { name: 'Tiếng Trung', flag: '🇨🇳' },
-    { name: 'Tiếng Nhật', flag: '🇯🇵' },
-    { name: 'Tiếng Hàn', flag: '🇰🇷' },
-    { name: 'Tiếng Đức', flag: '🇩🇪' },
-    { name: 'các nước', flag: '🏳️‍🌈' }
+    { name: 'Tiếng Việt', flag: '' },
+    { name: 'Tiếng Anh', flag: '' },
+    { name: 'Tiếng Pháp', flag: '' },
+    { name: 'Tiếng Trung', flag: '' },
+    { name: 'Tiếng Nhật', flag: '' },
+    { name: 'Tiếng Hàn', flag: '' },
+    { name: 'Tiếng Đức', flag: '' },
+    { name: 'các nước', flag: '' }
 ];
 
 export default function DictionaryHeader() {
